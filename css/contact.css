@@ -1,0 +1,197 @@
+/* ============================================
+   Contact Page Styles
+   ============================================ */
+
+/* Body flex for sticky footer */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    flex: 1;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+}
+
+/* Contact Info Box */
+.contact-info {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.contact-info h2 {
+    font-size: 1.8rem;
+    color: var(--moss);
+    margin-bottom: 24px;
+}
+
+.contact-info p {
+    color: var(--bark-light);
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.contact-item-content h4 {
+    font-size: 1.1rem;
+    color: var(--moss);
+    margin-bottom: 4px;
+}
+
+.contact-item-content p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--cream-dark);
+}
+
+.social-links h4 {
+    font-size: 1.1rem;
+    color: var(--moss);
+    margin-bottom: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: var(--sage-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background: var(--moss);
+    transform: translateY(-3px);
+}
+
+/* Contact Form Wrapper */
+.contact-form-wrapper {
+    background: var(--white);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.contact-form-wrapper h2 {
+    font-size: 1.8rem;
+    color: var(--moss);
+    margin-bottom: 10px;
+}
+
+.contact-form-wrapper > p {
+    color: var(--bark-light);
+    margin-bottom: 30px;
+}
+
+/* Contact Form Specific Input Styles */
+.contact-form-wrapper .form-group input,
+.contact-form-wrapper .form-group select,
+.contact-form-wrapper .form-group textarea {
+    background: var(--cream);
+}
+
+.contact-form-wrapper .form-group input:focus,
+.contact-form-wrapper .form-group select:focus,
+.contact-form-wrapper .form-group textarea:focus {
+    background: var(--white);
+}
+
+.contact-form-wrapper .form-group textarea {
+    min-height: 150px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    color: var(--moss);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--cream);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: var(--moss);
+    margin-bottom: 12px;
+}
+
+.faq-item p {
+    color: var(--bark-light);
+    font-size: 0.95rem;
+}
+
+/* Contact Page Responsive */
+@media (max-width: 900px) {
+    .contact-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form-wrapper,
+    .contact-info {
+        padding: 30px 20px;
+    }
+}
+
+
