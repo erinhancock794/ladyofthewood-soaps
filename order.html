@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | AZ Lady of the Wood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">AZ Lady <span>of the Wood</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="order.html" class="active">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Soap Collection</h1>
+            <p>Handcrafted with love, made for your skin</p>
+        </div>
+    </section>
+
+    <section class="shop">
+        <div class="container">
+            <div class="shop-info">
+                <p>Each bar is handmade using the cold process method and cured for 4-6 weeks. All soaps are free of toxins and use only skin-safe dyes and fragrances.</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🌸</div>
+                    <div class="product-info">
+                        <h3>Lavender Dreams</h3>
+                        <p class="product-description">A calming blend of pure lavender essential oil with shea butter for deep moisturizing.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$8.00</span>
+                            <span class="product-weight">~4.5 oz</span>
+                        </div>
+                        <button class="btn btn-add">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card sold-out">
+                    <div class="product-image">🍯<span class="sold-out-badge">Sold Out</span></div>
+                    <div class="product-info">
+                        <h3>Honey Oatmeal</h3>
+                        <p class="product-description">Gentle exfoliation with colloidal oats and raw honey. Perfect for sensitive skin.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$8.50</span>
+                            <span class="product-weight">~4.5 oz</span>
+                        </div>
+                        <button class="btn btn-sold-out" disabled>Sold Out</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🌲</div>
+                    <div class="product-info">
+                        <h3>Forest Fresh</h3>
+                        <p class="product-description">An invigorating blend of cedarwood, pine, and eucalyptus essential oils.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$9.00</span>
+                            <span class="product-weight">~4.5 oz</span>
+                        </div>
+                        <button class="btn btn-add">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🍊</div>
+                    <div class="product-info">
+                        <h3>Citrus Sunrise</h3>
+                        <p class="product-description">Bright and uplifting with orange, lemon, and grapefruit essential oils.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$8.00</span>
+                            <span class="product-weight">~4.5 oz</span>
+                        </div>
+                        <button class="btn btn-add">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🌿</div>
+                    <div class="product-info">
+                        <h3>Eucalyptus Mint</h3>
+                        <p class="product-description">Refreshing and cooling. Great for clearing sinuses and invigorating mornings.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$8.50</span>
+                            <span class="product-weight">~4.5 oz</span>
+                        </div>
+                        <button class="btn btn-add">Add to Order</button>
+                    </div>
+                </div>
+
+                <div class="product-card sold-out">
+                    <div class="product-image">🌹<span class="sold-out-badge">Sold Out</span></div>
+                    <div class="product-info">
+                        <h3>Rose Garden</h3>
+                        <p class="product-description">Luxurious rose clay and rose geranium essential oil for a spa-like experience.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$9.50</span>
+                            <span class="product-weight">~4.5 oz</span>
+                        </div>
+                        <button class="btn btn-sold-out" disabled>Sold Out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-form-section" id="order-form">
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <p>Fill out the form below and we'll get back to you with payment details and shipping information.</p>
+
+            <form class="order-form" action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Shipping Address *</label>
+                    <input type="text" id="address" name="address" placeholder="Street Address" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State *</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="zip">ZIP Code *</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Your Soaps *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="soaps" value="lavender">
+                            Lavender Dreams ($8.00)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="soaps" value="honey">
+                            Honey Oatmeal ($8.50)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="soaps" value="forest">
+                            Forest Fresh ($9.00)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="soaps" value="citrus">
+                            Citrus Sunrise ($8.00)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="soaps" value="eucalyptus">
+                            Eucalyptus Mint ($8.50)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="soaps" value="rose">
+                            Rose Garden ($9.50)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity per Soap</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1 bar each</option>
+                        <option value="2">2 bars each</option>
+                        <option value="3">3 bars each</option>
+                        <option value="4">4 bars each</option>
+                        <option value="5">5 bars each</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Special Requests or Notes</label>
+                    <textarea id="notes" name="notes" placeholder="Any allergies, gift wrapping requests, or special instructions..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Submit Order Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AZ Lady of the Wood</h3>
+                    <p>Handcrafted cold process soaps made with love, free of toxins, and using only safe, skin-friendly ingredients.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="contact.html">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AZ Lady of the Wood. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+        mobileOverlay.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

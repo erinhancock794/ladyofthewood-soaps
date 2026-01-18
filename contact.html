@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | AZ Lady of the Wood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">AZ Lady <span>of the Wood</span></a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="order.html">Shop</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Have questions about our soaps, ingredients, or want to place a custom order? We're here to help!</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-item-content">
+                            <h4>Email</h4>
+                            <p>hello@azladyofthewood.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-item-content">
+                            <h4>Location</h4>
+                            <p>Arizona, USA</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-item-content">
+                            <h4>Response Time</h4>
+                            <p>We typically respond within 24-48 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" title="Instagram">📷</a>
+                            <a href="#" class="social-icon" title="Facebook">👍</a>
+                            <a href="#" class="social-icon" title="Pinterest">📌</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                    <form action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Question</option>
+                                <option value="custom">Custom Order Request</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                                <option value="ingredients">Ingredients Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What is cold process soap?</h3>
+                    <p>Cold process soap is made by mixing oils with lye (sodium hydroxide) without external heat. This traditional method preserves the natural glycerin and beneficial properties of the oils, resulting in a gentler, more moisturizing bar.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are your soaps safe for sensitive skin?</h3>
+                    <p>Yes! Our soaps are free of harsh chemicals, synthetic fragrances, and artificial preservatives. We use only skin-safe dyes and natural ingredients. However, always check the ingredient list for potential allergens.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long do your soaps last?</h3>
+                    <p>With proper care (keeping them dry between uses on a draining soap dish), each bar typically lasts 4-6 weeks with daily use. The shelf life of unused bars is about 1 year when stored in a cool, dry place.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer custom orders?</h3>
+                    <p>Absolutely! We love creating custom soaps for special occasions like weddings, baby showers, or corporate gifts. Contact us with your ideas and we'll work together to create something unique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AZ Lady of the Wood</h3>
+                    <p>Handcrafted cold process soaps made with love, free of toxins, and using only safe, skin-friendly ingredients.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="contact.html">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AZ Lady of the Wood. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+        mobileOverlay.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
